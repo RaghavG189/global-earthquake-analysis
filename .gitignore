@@ -1,0 +1,30 @@
+# --- Virtual Environment ---
+# Ignores the Python libraries
+.venv/
+venv/
+env/
+
+# --- Generated Data ---
+# Ignores the database file
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Generated Model ---
+# Ignores the trained machine learning model
+*.pkl
+*.joblib
+
+# --- Python Cache ---
+# Ignores the folders Python auto-creates
+__pycache__/
+
+# --- Jupyter Notebook Cache ---
+# Ignores the cache, but NOT .ipynb file
+.ipynb_checkpoints/
+
+# --- OS / Editor Specific ---
+# Ignores system junk and editor settings
+.DS_Store
+Thumbs.db
+.vscode/
