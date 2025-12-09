@@ -90,4 +90,4 @@ if st.button('Predict Magnitude'):
 
     predicted_magnitude = prediction[0]
 
-    st.success(f'The predicted magnitude was: {predicted_magnitude}')
+    st.success(f'The predicted magnitude was: {predicted_magnitude:.2f}')
