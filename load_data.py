@@ -43,6 +43,10 @@ if 'type' in clean_earthquake_df.columns:
 if 'place' in clean_earthquake_df.columns:
     clean_earthquake_df.insert(7, "region", clean_earthquake_df['place'].apply(lambda x: x.split()[-1]))
 
+#Change CA to California for consistency
+if 'region' in clean_earthquake_df.columns:
+    clean_earthquake_df['region'] = clean_earthquake_df['region'].replace('CA', 'California')
+
 print(f"Saving to database at {DB_FILE}")
 #Creates and Connects to local SQLite file
 conn = sq.connect(DB_PATH)
