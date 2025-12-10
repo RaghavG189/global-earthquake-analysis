@@ -20,7 +20,7 @@ MODEL_PATH = os.path.join(DATA_FOLDER, MODEL_FILE)
 print("Connecting to database...")
 conn = sq.connect(DB_PATH) #Connect to database
 
-retrieve_df_query = 'SELECT * FROM earthquakes;' #Query to retrieve all rows
+retrieve_df_query = 'SELECT latitude, longitude, depth, mag FROM earthquakes;' #Query to retrieve all rows
 
 print("Retrieving dataframe...")
 loaded_earthquakes_df = pd.read_sql(retrieve_df_query, conn) #Run query to retrieve dataframe
