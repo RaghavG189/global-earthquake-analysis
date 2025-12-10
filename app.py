@@ -94,7 +94,7 @@ with chart_col3:
 
 #Magnitude Intensity by Region Chart
 with chart_col4:
-    st.subheader('Magnitude Intensity by Region Chart')
+    st.subheader('Magnitude Intensity by Region')
     fig4, ax4 = plt.subplots() #Create image and specific graph
 
     top_regions_five = earthquakes_df['region'].value_counts().head(5).index #Get top 5 regions
